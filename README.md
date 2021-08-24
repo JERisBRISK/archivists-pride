@@ -1,6 +1,8 @@
 # Archivist's Pride
 A tool for monitoring supply and values of Parallel NFT wallets, card sets, etc.
 
+![image](https://user-images.githubusercontent.com/14815901/130671291-09f27dcd-28aa-4cfe-92a1-8796931ec2aa.png)
+
 # Requirements
 You might have Python 3.9.5+ to run this code. I suggest installing this one as it's what I use:
 https://www.python.org/downloads/release/python-396/
