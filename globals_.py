@@ -1,0 +1,23 @@
+import dearpygui.dearpygui as dpg
+global AssetsTable
+global AssetValueInEth
+global AssetValueInFiat
+global CardData
+global CardWindow
+global CardWindowImage
+global CardWindowImageTexture
+global ContractAddressText
+global CurrentEthPrice
+global DonationAddress
+global EthPriceText
+global LastUpdateText
+global MainWindow
+global MintingAddressText
+global ProgressBar
+global SetsWindow
+global StatusBarText
+global TableSortPreference
+global ThumbnailImage
+global ThumbnailTexture
+global ThumbnailTooltip
+global WalletAddressText

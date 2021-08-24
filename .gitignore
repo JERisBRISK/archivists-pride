@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Logs
+*log.txt
+
+# Scratch and temp
+scratch.py
+temp*.py
