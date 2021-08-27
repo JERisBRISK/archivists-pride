@@ -1,0 +1,4 @@
+Dumper==1.2.0
+requests==2.26.0
+dearpygui==0.8.57
+web3==5.22.0

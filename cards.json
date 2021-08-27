@@ -1,0 +1,2119 @@
+{
+  "10": {
+    "name": "Artillery Volley",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10",
+    "supply": {
+      "Minted": 900,
+      "Withheld": 57
+    }
+  },
+  "10106": {
+    "name": "Malachite Shield [SE]",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10106",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 176
+    }
+  },
+  "10109": {
+    "name": "Marcolian Bannerman [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10109",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 242
+    }
+  },
+  "10111": {
+    "name": "Soleia, Disciple of Gaffar",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10111",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 20
+    }
+  },
+  "10112": {
+    "name": "Soleia, Disciple of Gaffar [SE]",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10112",
+    "supply": {
+      "Minted": 250,
+      "Withheld": 39
+    }
+  },
+  "10114": {
+    "name": "Reclamator",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10114",
+    "supply": {
+      "Minted": 3000,
+      "Withheld": 1922
+    }
+  },
+  "10115": {
+    "name": "Reclamator [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10115",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 171
+    }
+  },
+  "10119": {
+    "name": "Lancer Tank",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10119",
+    "supply": {
+      "Minted": 700,
+      "Withheld": 48
+    }
+  },
+  "10120": {
+    "name": "Lancer Tank [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10120"
+  },
+  "10126": {
+    "name": "Tabula Rasa [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10126",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 196
+    }
+  },
+  "10133": {
+    "name": "Solar Grenade",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10133",
+    "supply": {
+      "Minted": 3100,
+      "Withheld": 1910
+    }
+  },
+  "10134": {
+    "name": "Solar Grenade [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10134",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 185
+    }
+  },
+  "10137": {
+    "name": "Strength of Mars [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10137",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 168
+    }
+  },
+  "10140": {
+    "name": "Supply Drop [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10140",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 216
+    }
+  },
+  "10142": {
+    "name": "Demolecularize [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10142",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 195
+    }
+  },
+  "10144": {
+    "name": "Genetic Correction [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10144",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 148
+    }
+  },
+  "10150": {
+    "name": "Paradox",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10150",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1294
+    }
+  },
+  "10151": {
+    "name": "Paradox [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10151",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 187
+    }
+  },
+  "10152": {
+    "name": "Enthalpy's Grasp [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10152",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 144
+    }
+  },
+  "10153": {
+    "name": "Amperage",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10153",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1301
+    }
+  },
+  "10154": {
+    "name": "Amperage [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10154",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 164
+    }
+  },
+  "10156": {
+    "name": "Entropy's Reach [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10156",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 173
+    }
+  },
+  "10159": {
+    "name": "Reliant Gamma [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10159",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 152
+    }
+  },
+  "10161": {
+    "name": "Foundry Technician [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10161",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 154
+    }
+  },
+  "10170": {
+    "name": "Life Well [SE]",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10170"
+  },
+  "10172": {
+    "name": "Manipulation Ray",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10172",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 946
+    }
+  },
+  "10173": {
+    "name": "Manipulation Ray [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10173"
+  },
+  "10175": {
+    "name": "Master Poisoner",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10175",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1250
+    }
+  },
+  "10176": {
+    "name": "Master Poisoner [SE]",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10176",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 180
+    }
+  },
+  "10178": {
+    "name": "Reality Manipulator",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10178",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1271
+    }
+  },
+  "10179": {
+    "name": "Reality Manipulator [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10179"
+  },
+  "10181": {
+    "name": "Nucleotic Synthesizer",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10181",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 956
+    }
+  },
+  "10182": {
+    "name": "Nucleotic Synthesizer [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10182",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 187
+    }
+  },
+  "10185": {
+    "name": "Ocular Implant [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10185"
+  },
+  "10187": {
+    "name": "Earthbreaker Cannon",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10187",
+    "supply": {
+      "Minted": 800,
+      "Withheld": 61
+    }
+  },
+  "10189": {
+    "name": "Earthbreaker Cannon [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10189"
+  },
+  "10206": {
+    "name": "Mechanize [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10206"
+  },
+  "10207": {
+    "name": "Mechanize",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10207",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1265
+    }
+  },
+  "10208": {
+    "name": "Antius's Forecast [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10208",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 207
+    }
+  },
+  "10210": {
+    "name": "Tabula Rasa",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10210",
+    "supply": {
+      "Minted": 2700,
+      "Withheld": 1700
+    }
+  },
+  "10214": {
+    "name": "Change of Heart Concept Art Card",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10214"
+  },
+  "10215": {
+    "name": "Foundry Technician Concept Art Card",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10215"
+  },
+  "10216": {
+    "name": "Gaffar, Arbiter of Earth Concept Art Card",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10216"
+  },
+  "10217": {
+    "name": "Malachite Shield Concept Art Card",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10217"
+  },
+  "10218": {
+    "name": "New Dawn Concept Art Card",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10218"
+  },
+  "10219": {
+    "name": "Pocket Dimension 01 Concept Art Card",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10219"
+  },
+  "10220": {
+    "name": "Pocket Dimension 02 Concept Art Card",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10220"
+  },
+  "10221": {
+    "name": "Soleia, Disciple of Gaffar Concept Art Card",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10221"
+  },
+  "10222": {
+    "name": "MEV Stone Concept Art Card",
+    "traits": {
+      "Parallel": "Unknown Origins"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10222"
+  },
+  "10223": {
+    "name": "New Dawn Art Card",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10223"
+  },
+  "10224": {
+    "name": "Augencore Logo Collectible Card Back",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10224"
+  },
+  "10226": {
+    "name": "Earthen Logo Collectible Card Back",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10226"
+  },
+  "10227": {
+    "name": "Kathari Logo Collectible Card Back",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10227",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 8
+    }
+  },
+  "10228": {
+    "name": "Shroud Logo Collectible Card Back",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10228",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 9
+    }
+  },
+  "10229": {
+    "name": "Marcolian Logo Collectible Card Back",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10229"
+  },
+  "10235": {
+    "name": "Instant Replicator",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10235",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1262
+    }
+  },
+  "10236": {
+    "name": "Instant Replicator [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10236",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 168
+    }
+  },
+  "10238": {
+    "name": "Pocket Dimension [SE]",
+    "traits": {
+      "Parallel": "Shroud",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10238"
+  },
+  "10239": {
+    "name": "Pocket Dimension [SE]",
+    "traits": {
+      "Parallel": "Shroud",
+      "Time": "Night"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10239"
+  },
+  "10240": {
+    "name": "Pocket Dimension",
+    "traits": {
+      "Parallel": "Shroud",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10240",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 619
+    }
+  },
+  "10241": {
+    "name": "Pocket Dimension",
+    "traits": {
+      "Parallel": "Shroud",
+      "Time": "Night"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10241",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 662
+    }
+  },
+  "10244": {
+    "name": "The Tree of Nehemiah [SE]",
+    "traits": {
+      "Parallel": "Earthen",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10244"
+  },
+  "10245": {
+    "name": "The Tree of Nehemiah [SE]",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10245",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 70
+    }
+  },
+  "10246": {
+    "name": "Gaia's Call",
+    "traits": {
+      "Parallel": "Earthen",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10246",
+    "supply": {
+      "Minted": 450,
+      "Withheld": 27
+    }
+  },
+  "10247": {
+    "name": "Gaia's Call",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10247",
+    "supply": {
+      "Minted": 450,
+      "Withheld": 24
+    }
+  },
+  "10248": {
+    "name": "Gaia's Call [SE]",
+    "traits": {
+      "Parallel": "Earthen",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10248"
+  },
+  "10249": {
+    "name": "Gaia's Call [SE]",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10249"
+  },
+  "10252": {
+    "name": "Warden [SE]",
+    "traits": {
+      "Parallel": "Marcolian",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10252"
+  },
+  "10255": {
+    "name": "Void Crystal [SE]",
+    "traits": {
+      "State": "Active ",
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10255",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 72
+    }
+  },
+  "10256": {
+    "name": "Void Crystal [SE]",
+    "traits": {
+      "Parallel": "Shroud",
+      "State": "Inactive"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10256",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 65
+    }
+  },
+  "10258": {
+    "name": "Eye of Galli",
+    "traits": {
+      "Parallel": "Kathari",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10258",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 618
+    }
+  },
+  "10259": {
+    "name": "Eye of Galli",
+    "traits": {
+      "Parallel": "Kathari",
+      "Time": "Night"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10259",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 619
+    }
+  },
+  "10260": {
+    "name": "Eye of Galli [SE]",
+    "traits": {
+      "Parallel": "Kathari",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10260",
+    "supply": {
+      "Minted": 250,
+      "Withheld": 95
+    }
+  },
+  "10262": {
+    "name": "Cost of Creation",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10262",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1246
+    }
+  },
+  "10263": {
+    "name": "Cost of Creation [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10263",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 174
+    }
+  },
+  "10265": {
+    "name": "Trade Secrets",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10265",
+    "supply": {
+      "Minted": 800,
+      "Withheld": 50
+    }
+  },
+  "10266": {
+    "name": "Trade Secrets [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10266",
+    "supply": {
+      "Minted": 250,
+      "Withheld": 30
+    }
+  },
+  "10268": {
+    "name": "G.R.A.U.L",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10268",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1282
+    }
+  },
+  "10275": {
+    "name": "Star Chart",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10275",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1261
+    }
+  },
+  "10276": {
+    "name": "Star Chart [SE]",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10276",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 182
+    }
+  },
+  "10279": {
+    "name": "Backup Copy [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10279",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 218
+    }
+  },
+  "10284": {
+    "name": "Warden [SE]",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10284",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 64
+    }
+  },
+  "10285": {
+    "name": "Eye of Galli [SE]",
+    "traits": {
+      "Parallel": "Kathari",
+      "Time": "Night"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10285",
+    "supply": {
+      "Minted": 250,
+      "Withheld": 79
+    }
+  },
+  "10286": {
+    "name": "Collateral Damage [SE]",
+    "traits": {
+      "Parallel": "Universal",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10286",
+    "supply": {
+      "Minted": 750,
+      "Withheld": 96
+    }
+  },
+  "10287": {
+    "name": "Collateral Damage [SE]",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10287",
+    "supply": {
+      "Minted": 750,
+      "Withheld": 101
+    }
+  },
+  "10288": {
+    "name": "Change of Heart [SE]",
+    "traits": {
+      "Parallel": "Earthen",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10288",
+    "supply": {
+      "Minted": 750,
+      "Withheld": 116
+    }
+  },
+  "10289": {
+    "name": "Change of Heart [SE]",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10289",
+    "supply": {
+      "Minted": 750,
+      "Withheld": 98
+    }
+  },
+  "10290": {
+    "name": "Repurposed Hardware [SE]",
+    "traits": {
+      "Parallel": "Marcolian",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10290",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 63
+    }
+  },
+  "10291": {
+    "name": "Repurposed Hardware [SE]",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10291",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 75
+    }
+  },
+  "10295": {
+    "name": "Seeing Triple [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10295",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 237
+    }
+  },
+  "10296": {
+    "name": "Smuggled Supplies [SE]",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10296",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 189
+    }
+  },
+  "10297": {
+    "name": "G.R.A.U.L [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10297",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 183
+    }
+  },
+  "11": {
+    "name": "Neutron Bomb",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/11",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 36
+    }
+  },
+  "12": {
+    "name": "Orbital Strike",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/12",
+    "supply": {
+      "Minted": 3000,
+      "Withheld": 1848
+    }
+  },
+  "13": {
+    "name": "Aurora Fungi",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/13",
+    "supply": {
+      "Minted": 10000,
+      "Withheld": 9921
+    }
+  },
+  "14": {
+    "name": "Kethtrexamine",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/14",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 32
+    }
+  },
+  "15": {
+    "name": "Graphene Batteries",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/15",
+    "supply": {
+      "Minted": 10000,
+      "Withheld": 9944
+    }
+  },
+  "16": {
+    "name": "Ashes to Ashes",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/16",
+    "supply": {
+      "Minted": 3000,
+      "Withheld": 1857
+    }
+  },
+  "17": {
+    "name": "Recon",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/17",
+    "supply": {
+      "Minted": 20000,
+      "Withheld": 19837
+    }
+  },
+  "18": {
+    "name": "Synchronicity",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/18",
+    "supply": {
+      "Minted": 50000,
+      "Withheld": 49914
+    }
+  },
+  "19": {
+    "name": "Gaffar's Peace Pipe",
+    "traits": {
+      "Parallel": "Earthen "
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/19",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 32
+    }
+  },
+  "20": {
+    "name": "Cytokinesis",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/20",
+    "supply": {
+      "Minted": 2000,
+      "Withheld": 1214
+    }
+  },
+  "27": {
+    "name": "Marcolian Parallel Concept Art",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/27",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 1
+    }
+  },
+  "28": {
+    "name": "Kathari Parallel Concept Art",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/28",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 2
+    }
+  },
+  "29": {
+    "name": "Earthen Parallel Concept Art",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/29",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 1
+    }
+  },
+  "30": {
+    "name": "Augencore Parallel Concept Art",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/30",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 4
+    }
+  },
+  "31": {
+    "name": "Shroud Parallel Concept Art",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/31",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 1
+    }
+  },
+  "33": {
+    "name": "Group Parallel Concept Art",
+    "traits": {},
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/33",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 1
+    }
+  },
+  "34": {
+    "name": "Augencore Mech Concept Art",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/34",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 2
+    }
+  },
+  "35": {
+    "name": "Marcolian Space Station Concept Art",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/35",
+    "supply": {
+      "Minted": 8,
+      "Withheld": 1
+    }
+  },
+  "36": {
+    "name": "Augencore Parallel Collectible Card Back",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/36",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 84
+    }
+  },
+  "37": {
+    "name": "Earthen Parallel Collectible Card Back",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/37",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 82
+    }
+  },
+  "38": {
+    "name": "Kathari Parallel Collectible Card Back",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/38",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 85
+    }
+  },
+  "39": {
+    "name": "Marcolian Parallel Collectible Card Back",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/39"
+  },
+  "40": {
+    "name": "Shroud Parallel Collectible Card Back",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/40"
+  },
+  "64": {
+    "name": "Archivist's Pride [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/64"
+  },
+  "65": {
+    "name": "Revitalizing Growth [SE]",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/65"
+  },
+  "66": {
+    "name": "Artillery Volley [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/66"
+  },
+  "67": {
+    "name": "Neutron Bomb [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/67"
+  },
+  "68": {
+    "name": "Orbital Strike [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/68"
+  },
+  "69": {
+    "name": "Aurora Fungi [SE]",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/69"
+  },
+  "70": {
+    "name": "Kethtrexamine [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/70"
+  },
+  "72": {
+    "name": "Ashes to Ashes [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/72",
+    "supply": {
+      "Minted": 47,
+      "Withheld": 0
+    }
+  },
+  "73": {
+    "name": "Recon [SE]",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/73",
+    "supply": {
+      "Minted": 163,
+      "Withheld": 0
+    }
+  },
+  "74": {
+    "name": "Synchronicity [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/74",
+    "supply": {
+      "Minted": 95,
+      "Withheld": 8
+    }
+  },
+  "76": {
+    "name": "Cytokinesis [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/76"
+  },
+  "8": {
+    "name": "Archivist's Pride",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/8",
+    "supply": {
+      "Minted": 30000,
+      "Withheld": 29936
+    }
+  },
+  "86": {
+    "name": "Gaffar's Peace Pipe [SE]",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/86"
+  },
+  "88": {
+    "name": "Graphene Batteries [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/88",
+    "supply": {
+      "Minted": 53,
+      "Withheld": 0
+    }
+  },
+  "9": {
+    "name": "Revitalizing Growth",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/9",
+    "supply": {
+      "Minted": 10000,
+      "Withheld": 9923
+    }
+  },
+  "10300": {
+    "name": "Parallel Masterpiece // Alpha // Eye of Galli",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10300"
+  },
+  "10299": {
+    "name": "Smuggled Supplies",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10299",
+    "supply": {
+      "Minted": 50000,
+      "Withheld": 49984
+    }
+  },
+  "10298": {
+    "name": "Backup Copy",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10298",
+    "supply": {
+      "Minted": 50000,
+      "Withheld": 49984
+    }
+  },
+  "10294": {
+    "name": "Eye of Galli [PL]",
+    "traits": {
+      "Type": "Perfect Lopp",
+      "Parallel": "Kathari",
+      "Time": "Night"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10294",
+    "supply": {
+      "Minted": 250,
+      "Withheld": 244
+    }
+  },
+  "10293": {
+    "name": "Eye of Galli [PL]",
+    "traits": {
+      "Parallel": "Kathari",
+      "Type": "Perfect Loop",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10293",
+    "supply": {
+      "Minted": 250,
+      "Withheld": 244
+    }
+  },
+  "10292": {
+    "name": "Strength of Mars [PL]",
+    "traits": {
+      "Type": "Perfect Loop",
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10292",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 974
+    }
+  },
+  "10280": {
+    "name": "Parallel Masterpiece // Alpha // Smuggled Supplies",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10280"
+  },
+  "10277": {
+    "name": "Parallel Masterpiece // Alpha // Backup Copy",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10277"
+  },
+  "10273": {
+    "name": "Parallel Masterpiece // Alpha // Star Chart",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10273"
+  },
+  "10272": {
+    "name": "Seeing Triple",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10272"
+  },
+  "10271": {
+    "name": "Seeing Triple",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10271",
+    "supply": {
+      "Minted": 50000,
+      "Withheld": 49984
+    }
+  },
+  "10270": {
+    "name": "Parallel Masterpiece // Alpha // Seeing Triple",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10270"
+  },
+  "10267": {
+    "name": "Parallel Masterpiece // Alpha // G.R.A.U.L",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10267"
+  },
+  "10264": {
+    "name": "Parallel Masterpiece // Alpha // Trade Secrets",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10264"
+  },
+  "10261": {
+    "name": "Parallel Masterpiece // Alpha // Cost of Creation",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10261"
+  },
+  "10254": {
+    "name": "Void Crystal",
+    "traits": {
+      "Parallel": "Shroud",
+      "State": "Inactive"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10254"
+  },
+  "10253": {
+    "name": "Void Crystal",
+    "traits": {
+      "State": "Active",
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10253"
+  },
+  "10251": {
+    "name": "Warden",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10251"
+  },
+  "10250": {
+    "name": "Warden",
+    "traits": {
+      "Parallel": "Marcolian",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10250"
+  },
+  "10243": {
+    "name": "The Tree of Nehemiah",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10243"
+  },
+  "10242": {
+    "name": "The Tree of Nehemiah",
+    "traits": {
+      "Time ": "Day",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10242"
+  },
+  "10237": {
+    "name": "Antius's Forecast",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10237"
+  },
+  "10234": {
+    "name": "Parallel Masterpiece // Alpha // Instant Replicator",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10234"
+  },
+  "10230": {
+    "name": "Warden Collectible Card Back",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10230"
+  },
+  "10225": {
+    "name": "Shroud Clear Void Crystal Collectible Card Back",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10225",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 6
+    }
+  },
+  "10213": {
+    "name": "Reliant Gamma",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10213"
+  },
+  "10212": {
+    "name": "Foundry Technician",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10212"
+  },
+  "10205": {
+    "name": "Parallel Masterpiece // Alpha // Mechanize",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10205"
+  },
+  "10203": {
+    "name": "Repurposed Hardware [SE]",
+    "traits": {
+      "Parallel": "Marcolian",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10203"
+  },
+  "10202": {
+    "name": "Repurposed Hardware",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10202"
+  },
+  "10201": {
+    "name": "Repurposed Hardware",
+    "traits": {
+      "Parallel": "Marcolian",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10201"
+  },
+  "10200": {
+    "name": "Collateral Damage",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10200"
+  },
+  "10199": {
+    "name": "Collateral Damage",
+    "traits": {
+      "Parallel": "Universal",
+      "Time": "Day"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10199"
+  },
+  "10194": {
+    "name": "Parallel Masterpiece // Alpha // Collateral Damage",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10194"
+  },
+  "10193": {
+    "name": "Change of Heart",
+    "traits": {
+      "Time ": "Day",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10193"
+  },
+  "10192": {
+    "name": "Change of Heart",
+    "traits": {
+      "Time ": "Night",
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10192"
+  },
+  "10190": {
+    "name": "Parallel Masterpiece // Alpha // Change of Heart",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10190"
+  },
+  "10186": {
+    "name": "Parallel Masterpiece // Alpha // Earthbreaker Cannon",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10186"
+  },
+  "10184": {
+    "name": "Ocular Implant",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10184"
+  },
+  "10183": {
+    "name": "Parallel Masterpiece // Alpha // Ocular Implant",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10183"
+  },
+  "10180": {
+    "name": "Parallel Masterpiece // Alpha // Nucleotic Synthesizer",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10180"
+  },
+  "10177": {
+    "name": "Parallel Masterpiece // Alpha // Reality Manipulator",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10177"
+  },
+  "10174": {
+    "name": "Parallel Masterpiece // Alpha // Master Poisoner",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10174"
+  },
+  "10171": {
+    "name": "Parallel Masterpiece // Alpha // Manipulation Ray",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10171"
+  },
+  "10169": {
+    "name": "Life Well",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10169"
+  },
+  "10168": {
+    "name": "Parallel Masterpiece // Alpha // Life Well",
+    "traits": {
+      "Parallel ": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10168"
+  },
+  "10165": {
+    "name": "Parallel Masterpiece // Alpha // Pocket Dimension",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10165"
+  },
+  "10162": {
+    "name": "Parallel Masterpiece // Alpha // The Tree of Nehemiah",
+    "traits": {
+      "Parallel ": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10162"
+  },
+  "10160": {
+    "name": "Parallel Masterpiece // Alpha // Foundry Technician",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10160"
+  },
+  "10158": {
+    "name": "Parallel Masterpiece // Alpha // Reliant Gamma",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10158"
+  },
+  "10157": {
+    "name": "Entropy's Reach",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10157"
+  },
+  "10145": {
+    "name": "Parallel Masterpiece // Alpha // Repurposed Hardware",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10145"
+  },
+  "10143": {
+    "name": "Genetic Correction",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10143"
+  },
+  "10141": {
+    "name": "Demolecularize",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10141"
+  },
+  "10139": {
+    "name": "Supply Drop",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10139"
+  },
+  "10138": {
+    "name": "Parallel Masterpiece // Alpha // Supply Drop",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10138"
+  },
+  "10136": {
+    "name": "Strength of Mars",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10136"
+  },
+  "10135": {
+    "name": "Parallel Masterpiece // Alpha // Strength of Mars",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10135"
+  },
+  "10132": {
+    "name": "Parallel Masterpiece // Alpha // Solar Grenade",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10132"
+  },
+  "10127": {
+    "name": "Parallel Masterpiece // Alpha // Warden",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10127"
+  },
+  "10125": {
+    "name": "Parallel Masterpiece // Alpha // Tabula Rasa",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10125"
+  },
+  "10124": {
+    "name": "Parallel Masterpiece // Alpha // Antius's Forecast",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10124"
+  },
+  "10121": {
+    "name": "Parallel Masterpiece // Alpha // Gaia's Call",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10121"
+  },
+  "10117": {
+    "name": "Enthalpy's Grasp",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10117"
+  },
+  "10116": {
+    "name": "Parallel Masterpiece // Alpha // Enthalpy's Grasp",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10116"
+  },
+  "10113": {
+    "name": "Parallel Masterpiece // Alpha // Reclamator",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10113"
+  },
+  "10110": {
+    "name": "Parallel Masterpiece // Alpha // Soleia, Disciple of Gaffar",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10110"
+  },
+  "10108": {
+    "name": "Marcolian Bannerman",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10108"
+  },
+  "10107": {
+    "name": "Parallel Masterpiece // Alpha // Marcolian Bannerman",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10107"
+  },
+  "10105": {
+    "name": "Malachite Shield",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10105"
+  },
+  "10104": {
+    "name": "Parallel Masterpiece // Alpha // Malachite Shield",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10104"
+  },
+  "10101": {
+    "name": "Parallel Masterpiece // Alpha // Void Crystal",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10101"
+  },
+  "10099": {
+    "name": "Parallel Masterpiece // Alpha // Demolecularize",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10099"
+  },
+  "10097": {
+    "name": "Parallel Masterpiece // Alpha // Lancer Tank",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10097"
+  },
+  "10092": {
+    "name": "Catalyst Drive",
+    "traits": {
+      "Parallel": "Asset"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10092"
+  },
+  "10091": {
+    "name": "Parallel Masterpiece // Alpha // Rug Poll",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10091"
+  },
+  "10090": {
+    "name": "Rug Poll",
+    "traits": {
+      "Time": "Night",
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10090",
+    "supply": {
+      "Minted": 5000,
+      "Withheld": 0
+    }
+  },
+  "10089": {
+    "name": "Rug Poll",
+    "traits": {
+      "Parallel ": "Universal",
+      "Time": "Day "
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10089",
+    "supply": {
+      "Minted": 5000,
+      "Withheld": 0
+    }
+  },
+  "87": {
+    "name": "Prime Key",
+    "traits": {
+      "Parallel": "Asset"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/87",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 415
+    }
+  },
+  "85": {
+    "name": "Augencore Parallel Collectible Card Back [SE]",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/85"
+  },
+  "82": {
+    "name": "The First Son of Mars [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/82"
+  },
+  "81": {
+    "name": "Shroud Parallel Collectible Card Back [SE]",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/81"
+  },
+  "80": {
+    "name": "Marcolian Parallel Collectible Card Back [SE]",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/80"
+  },
+  "79": {
+    "name": "Kathari Parallel Collectible Card Back [SE]",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/79"
+  },
+  "78": {
+    "name": "Earthen Parallel Collectible Card Back [SE]",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/78"
+  },
+  "75": {
+    "name": "Gaffar's Peace Pipe",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/75"
+  },
+  "63": {
+    "name": "Parallel Masterpiece // Alpha // Amperage",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/63"
+  },
+  "62": {
+    "name": "Parallel Masterpiece // Alpha // Paradox",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/62"
+  },
+  "61": {
+    "name": "Parallel Masterpiece // Alpha // Entropy's Reach",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/61"
+  },
+  "60": {
+    "name": "Parallel Masterpiece // Alpha // The First Son of Mars",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/60"
+  },
+  "59": {
+    "name": "Parallel Masterpiece // Alpha // Artillery Volley",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/59"
+  },
+  "58": {
+    "name": "Parallel Masterpiece // Alpha // Cytokinesis",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/58"
+  },
+  "57": {
+    "name": "Parallel Masterpiece // Alpha // Orbital Strike",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/57"
+  },
+  "56": {
+    "name": "Parallel Masterpiece // Alpha // Graphene Batteries",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/56"
+  },
+  "55": {
+    "name": "Parallel Masterpiece // Alpha // Kethtrexamine",
+    "traits": {
+      "Parallel": "Augencore"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/55"
+  },
+  "54": {
+    "name": "Parallel Masterpiece // Alpha // Synchronicity",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/54"
+  },
+  "52": {
+    "name": "Parallel Masterpiece // Alpha // The Priming",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/52"
+  },
+  "51": {
+    "name": "Parallel Masterpiece // Alpha // Genetic Correction",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/51"
+  },
+  "49": {
+    "name": "Parallel Masterpiece // Alpha // Archivist's Pride",
+    "traits": {
+      "Parallel": "Kathari"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/49"
+  },
+  "50": {
+    "name": "Parallel Masterpiece // Alpha // Gaffar's Peace Pipe",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/50"
+  },
+  "48": {
+    "name": "Parallel Masterpiece // Alpha // Ashes to Ashes",
+    "traits": {
+      "Parallel": "Shroud"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/48"
+  },
+  "47": {
+    "name": "Parallel Masterpiece // Alpha // Neutron Bomb",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/47"
+  },
+  "46": {
+    "name": "Parallel Masterpiece // Alpha // Revitalizing Growth",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/46"
+  },
+  "45": {
+    "name": "Parallel Masterpiece // Alpha // Recon",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/45"
+  },
+  "42": {
+    "name": "Earthen Parallel Concept Art [SE]",
+    "traits": {
+      "Parallel": "Earthen"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/42",
+    "supply": {
+      "Minted": 5,
+      "Withheld": 0
+    }
+  },
+  "41": {
+    "name": "The First Son of Mars",
+    "traits": {
+      "Parallel": "Marcolian"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/41"
+  },
+  "7": {
+    "name": "The Priming",
+    "traits": {
+      "Parallel": "Universal"
+    },
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/7"
+  }
+}
