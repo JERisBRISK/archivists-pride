@@ -12,11 +12,11 @@ _Note: I run Windows 10. Pythong 3.9+ is **not** supported on Windows 7, so if y
 # Setup
 1. Download the latest release from https://github.com/JERisBRISK/archivists-pride/releases. You really just need the .zip, e.g.:
    ![image](https://user-images.githubusercontent.com/14815901/131177928-2a6585ef-9cdc-4bc4-a45e-1b810232e9be.png)
-3. If you're on Windows, right-click on the archive and Unblock it before you unzip it.
-4. Now, unzip the archive into a folder.
+3. Right-click on the archive and selec Properties. Check **Unblock** and **Apply** and/or **OK**.
+4. Right-click again and **'Extract All...'** the archive into its own folder.
 
 # Running AP
-Just run **ArchivistsPride.exe**!
+Just run **ArchivistsPride.exe** from the folder you made in **Setup**!
 
 # Bugs
 Please report any issues to https://github.com/JERisBRISK/archivists-pride/issues. Be as detailed as you can. I appreciate can't promise I'll fix them any time soon (or ever), but I hate bugs in my code so chances are high that if I can reproduce the problem, I'll get around to it.
