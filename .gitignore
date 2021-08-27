@@ -134,3 +134,6 @@ dmypy.json
 # Scratch and temp
 scratch.py
 temp*.py
+
+# Data
+_Data/*

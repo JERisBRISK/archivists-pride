@@ -3,10 +3,8 @@ import dearpygui.dearpygui as dpg
 # inspired by https://discord.com/channels/736279277242417272/876200434468016178/879776888824922122
 
 def alert(title, message):
-
     # guarantee these commands happen in the same frame
     with dpg.mutex():
-
         viewport_width = dpg.get_viewport_client_width()
         viewport_height = dpg.get_viewport_client_height()
 
