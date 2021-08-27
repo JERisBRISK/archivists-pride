@@ -4,32 +4,26 @@ A tool for monitoring supply and values of Parallel NFT wallets, card sets, etc.
 ![image](https://user-images.githubusercontent.com/14815901/131173186-1f173bee-44a9-493b-91de-4073901ca496.png)
 
 # Requirements
-You might have Python 3.9.5+ to run this code. I suggest installing this one as it's what I use:
-https://www.python.org/downloads/release/python-396/
+1. Windows 10
+2. Patience. (This is an alpha preview and it's a hobby project. Some things are slow right now.)
 
 _Note: I run Windows 10. Pythong 3.9+ is **not** supported on Windows 7, so if you're keeping the dream alive, don't get your hopes up. Also, Windows 7 has been deprecated and no longer receives security fixes. But you know that and you like to live dangerously._
 
 # Setup
-1. Download the project. Most users should just download a .zip
-
-   ![image](https://user-images.githubusercontent.com/14815901/131174537-0f9596f3-8c54-4dfe-a058-5ae03cc37791.png)
-
-2. If you're on Windows, right-click on the archive and Unblock it before you unzip it:
-
-![image](https://user-images.githubusercontent.com/14815901/131174807-6226589f-015d-4d55-9aa5-254c947bd1da.png)
-
-   Now, unzip the archive into a folder. You can call it whatever you like, but `archivists-pride-main` will probably be the default.
-
-3. Start your cmd / terminal / shell and change directories to the `archivists-pride-main` folder you created in step 2.
-4. Run `python -m pip install -r requirements.txt` in your favorite cmd / terminal / shell envrionment. 
-   (If you're a Windows user, you can run `setup.cmd` and it will do this for you.)
+1. Download the latest release from https://github.com/JERisBRISK/archivists-pride/releases
+2. If you're on Windows, right-click on the archive and Unblock it before you unzip it.
+3. Now, unzip the archive into a folder.
 
 # Running AP
-After completing **Setup**, run `python main.py` in your favorite command interpreter / shell envrionment.
-If you're a Windows user, you can use `run.cmd` instead.
+5. Just launch ArchivistsPride.exe!
 
 # Developer Notes
 I'm fairly new to Python and DearPyGui (and ImGui for that matter). This was made on a shoestring budget (read: $0), so the level of code smell is high. It's what you might call a passion project. I wrote it for myself but drew inspiration from friends in the Parallel community which informed certain features. I hope you find it useful. Unless you're sponsoring me, I can't promise that I'll find time to service your particular problem or request, but I'll do my best as time avails.
+
+# Other Operating Systems
+If you want to run this on another operating system, you're free to download the code and try.
+You will need Python 3.9.5+. I suggest installing this one as it's what I use:
+https://www.python.org/downloads/release/python-396/
 
 # Bugs
 Please report any issues to https://github.com/JERisBRISK/archivists-pride/issues. Be as detailed as you can. I appreciate can't promise I'll fix them any time soon (or ever), but I hate bugs in my code so chances are high that if I can reproduce the problem, I'll get around to it.
