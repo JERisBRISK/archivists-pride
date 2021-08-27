@@ -18,11 +18,14 @@ _Note: I run Windows 10. Pythong 3.9+ is **not** supported on Windows 7, so if y
 
 ![image](https://user-images.githubusercontent.com/14815901/131174807-6226589f-015d-4d55-9aa5-254c947bd1da.png)
 
-4. Run `python -m pip install -r requirements.txt` in your favorite command interpreter / shell environment.
-   If you're a Windows user, you can run `setup.cmd` and it will do it for you. 
+   Now, unzip the archive into a folder. You can call it whatever you like, but `archivists-pride-main` will probably be the default.
+
+3. Start your cmd / terminal / shell and change directories to the `archivists-pride-main` folder you created in step 2.
+4. Run `python -m pip install -r requirements.txt` in your favorite cmd / terminal / shell envrionment. 
+   (If you're a Windows user, you can run `setup.cmd` and it will do this for you.)
 
 # Running AP
-After completing Setup, run `python main.py` in your favorite command interpreter / shell envrionment.
+After completing **Setup**, run `python main.py` in your favorite command interpreter / shell envrionment.
 If you're a Windows user, you can use `run.cmd` instead.
 
 # Developer Notes
