@@ -11,10 +11,14 @@ _Note: I run Windows 10. Pythong 3.9+ is **not** supported on Windows 7, so if y
 
 # Setup
 1. Download the project. Most users should just download a .zip
+
    ![image](https://user-images.githubusercontent.com/14815901/131174537-0f9596f3-8c54-4dfe-a058-5ae03cc37791.png)
 
-2. Put it somewhere safe.
-3. Run `python -m pip install -r requirements.txt` in your favorite command interpreter / shell environment.
+2. If you're on Windows, right-click on the archive and Unblock it before you unzip it:
+
+![image](https://user-images.githubusercontent.com/14815901/131174807-6226589f-015d-4d55-9aa5-254c947bd1da.png)
+
+4. Run `python -m pip install -r requirements.txt` in your favorite command interpreter / shell environment.
    If you're a Windows user, you can run `setup.cmd` and it will do it for you. 
 
 # Running AP
