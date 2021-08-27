@@ -1,7 +1,7 @@
 # Archivist's Pride
 A tool for monitoring supply and values of Parallel NFT wallets, card sets, etc.
 
-![image](https://user-images.githubusercontent.com/14815901/130671291-09f27dcd-28aa-4cfe-92a1-8796931ec2aa.png)
+![image](https://user-images.githubusercontent.com/14815901/131173186-1f173bee-44a9-493b-91de-4073901ca496.png)
 
 # Requirements
 You might have Python 3.9.5+ to run this code. I suggest installing this one as it's what I use:
@@ -12,11 +12,11 @@ _Note: I run Windows 10. Pythong 3.9+ is **not** supported on Windows 7, so if y
 # Setup
 1. Download the project.
 2. Put it somewhere safe.
-3. Run `python3 -m pip install -r requirements.txt` in your favorite command interpreter / shell environment.
+3. Run `python -m pip install -r requirements.txt` in your favorite command interpreter / shell environment.
    If you're a Windows user, you can run `setup.cmd` and it will do it for you. 
 
 # Running AP
-After completing Setup, run `python3 main.py` in your favorite command interpreter / shell envrionment.
+After completing Setup, run `python main.py` in your favorite command interpreter / shell envrionment.
 If you're a Windows user, you can use `run.cmd` instead.
 
 # Developer Notes
