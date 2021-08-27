@@ -10,7 +10,9 @@ https://www.python.org/downloads/release/python-396/
 _Note: I run Windows 10. Pythong 3.9+ is **not** supported on Windows 7, so if you're keeping the dream alive, don't get your hopes up. Also, Windows 7 has been deprecated and no longer receives security fixes. But you know that and you like to live dangerously._
 
 # Setup
-1. Download the project.
+1. Download the project. Most users should just download a .zip
+   ![image](https://user-images.githubusercontent.com/14815901/131174537-0f9596f3-8c54-4dfe-a058-5ae03cc37791.png)
+
 2. Put it somewhere safe.
 3. Run `python -m pip install -r requirements.txt` in your favorite command interpreter / shell environment.
    If you're a Windows user, you can run `setup.cmd` and it will do it for you. 
