@@ -10,7 +10,7 @@ A tool for monitoring supply and values of Parallel NFT wallets, card sets, etc.
 _Note: I run Windows 10. Pythong 3.9+ is **not** supported on Windows 7, so if you're keeping the dream alive, don't get your hopes up. Also, Windows 7 has been deprecated and no longer receives security fixes. But you know that and you like to live dangerously._
 
 # Setup
-1. Download the latest release from https://github.com/JERisBRISK/archivists-pride/releases. You really just need the .zip:
+1. Download the latest release from https://github.com/JERisBRISK/archivists-pride/releases. You really just need the .zip, e.g.:
    ![image](https://user-images.githubusercontent.com/14815901/131177928-2a6585ef-9cdc-4bc4-a45e-1b810232e9be.png)
 3. If you're on Windows, right-click on the archive and Unblock it before you unzip it.
 4. Now, unzip the archive into a folder.
