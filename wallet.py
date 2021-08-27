@@ -14,7 +14,7 @@ from pushcontainer import push_container
 from singleton import Singleton
 from singleton import Singleton
 from sortdirection import SortDirection
-from threading import Lock, Thread
+from threading import Lock, Thread, Event
 from time import sleep
 import dearpygui.dearpygui as dpg
 import webbrowser
@@ -36,7 +36,6 @@ class DataColumns(Enum):
 class Wallet(metaclass=Singleton):
     MenuBar = dpg.generate_uuid()
     ProgressBar = dpg.generate_uuid()
-    StatusBarText = dpg.generate_uuid()    
     TableData = []
     TableDataLock = Lock()
     AssetsTableLock = Lock()
@@ -49,6 +48,10 @@ class Wallet(metaclass=Singleton):
         self.localConfig = localConfig
         self.logInfoCallback = logInfoCallback
         self.logErrorCallback = logErrorCallback
+
+        # data
+        self.lastUpdateTime = 0
+        self.dataUpdated = Event()
 
         # UI elements
         self.addressText = dpg.generate_uuid()
@@ -81,7 +84,6 @@ class Wallet(metaclass=Singleton):
 
             dpg.add_menu_bar(id=Wallet.MenuBar, parent=self.window)
             dpg.add_progress_bar(parent=Wallet.MenuBar, id=Wallet.ProgressBar, label="ProgressBar", overlay="status", default_value = 0.0)
-            dpg.add_text(parent=self.window, default_value="", id=Wallet.StatusBarText)
 
             dpg.add_input_text(
                 id=self.addressText,
@@ -92,7 +94,7 @@ class Wallet(metaclass=Singleton):
             watt = dpg.add_tooltip(parent=self.addressText)
             dpg.add_text(default_value="Put the address of a wallet you want to view here and click 'Refresh'", parent=watt)
             dpg.add_same_line(spacing=2)
-            dpg.add_button(label="Refresh", callback=self.GetData)
+            dpg.add_button(label="Refresh", callback=self.Update)
             dpg.add_text("Asset Value (ETH):")
             dpg.add_same_line(spacing=4)
             dpg.add_text(id=self.totalETHText)
@@ -111,7 +113,7 @@ class Wallet(metaclass=Singleton):
             self.InitTable()
 
         # kick things off with a refresh
-        #self.cancelUpdate = SetInterval(60*10, self.GetData)
+        #self.cancelUpdate = SetInterval(60*10, self.Update)
 
     def InitTable(self):
         t = dpg.add_table(
@@ -137,7 +139,7 @@ class Wallet(metaclass=Singleton):
             dpg.add_table_column(label=DataColumns.Properties.name, no_sort=True)
         return table
 
-    def GetData(self):
+    def Update(self):
         try:
             # read the wallet address provided by the user
             walletAddress = Ethereum.w3.toChecksumAddress(dpg.get_value(self.addressText))
@@ -151,8 +153,9 @@ class Wallet(metaclass=Singleton):
             alert("Wallet Address Error", f"Something went wrong: {str(e)}")
             return
 
-        Thread(target=self.UpdateTableData, args=(walletAddress, contractAddress), daemon=False).start()
-        Thread(target=self.UpdateAssetsTable, args=(walletAddress, contractAddress), daemon=False).start()
+        self.dataUpdated.clear()
+        Thread(target=self.UpdateTableData, args=(walletAddress, contractAddress), daemon=True).start()
+        Thread(target=self.UpdateAssetsTable, daemon=True).start()
 
     def Show(self):
         dpg.configure_item(self.window, show=True)
@@ -174,7 +177,6 @@ class Wallet(metaclass=Singleton):
 
         # the texture isn't in the file cache
         if not self.cache.IsCached(Cache.Images, fileName):
-            dpg.set_value(Wallet.StatusBarText, f"Adding {fileName} to download queue.")
             self.downloader.Enqueue(url=user_data['URL'], fileName=fileName)
 
         # the texture is in the file cache, so load it
@@ -210,161 +212,152 @@ class Wallet(metaclass=Singleton):
     def SortHandler(self, sender, app_data, user_data):
         column, direction = app_data[0]
         columnName = dpg.get_item_configuration(column)['label']
+        self.dataUpdated.clear()
         self.SortTableData(columnName, direction != 1)
         self.UpdateAssetsTable()
 
     def UpdateAssetsTable(self):
-        # prevent re-entrancy
-        if Wallet.AssetsTableLock.locked():
-            return
-        else:
-            Wallet.AssetsTableLock.acquire()
+        # wait for the update signal
+        self.dataUpdated.wait()
 
-        walletAddress = self.localConfig.Get('WalletAddress')
-        contractAddress = self.baseConfig.Get('ContractAddress')
+        with Wallet.AssetsTableLock:
+            walletAddress = self.localConfig.Get('WalletAddress')
+            contractAddress = self.baseConfig.Get('ContractAddress')
 
-        if not Wallet.TableData:
-            self.UpdateTableData(walletAddress, contractAddress)
+            if not Wallet.TableData:
+                self.UpdateTableData(walletAddress, contractAddress)
 
-        Wallet.TableDataLock.acquire()
+            with Wallet.TableDataLock:
+                if dpg.does_item_exist(self.table):
+                    dpg.delete_item(self.table)
 
-        if dpg.does_item_exist(self.table):
-            dpg.delete_item(self.table)
+                self.InitTable()
 
-        self.InitTable()
+                for row in Wallet.TableData:
+                    tokenId = row[DataColumns.TokenId.name]
+                    imageFileName = f"{contractAddress}.{tokenId}.f.png"
+                    thumbFileName = f"{contractAddress}.{tokenId}.t.png"
 
-        for row in Wallet.TableData:
-            tokenId = row[DataColumns.TokenId.name]
-            imageFileName = f"{contractAddress}.{tokenId}.f.png"
-            thumbFileName = f"{contractAddress}.{tokenId}.t.png"
+                    record = [
+                        row[DataColumns.Quantity.name],
+                        row[DataColumns.TotalSupply.name],
+                        row[DataColumns.WithheldSupply.name],
+                        "{0:.2f}%".format(row[DataColumns.UnreleasedPercentage.name]),
+                        "ETH {0:,.4f}".format(row[DataColumns.ETH.name]),
+                        "${0:,.2f}".format(row[DataColumns.USD.name]),
+                        ]
 
-            record = [
-                row[DataColumns.Quantity.name],
-                row[DataColumns.TotalSupply.name],
-                row[DataColumns.WithheldSupply.name],
-                "{0:.2f}%".format(row[DataColumns.UnreleasedPercentage.name]),
-                "ETH {0:,.4f}".format(row[DataColumns.ETH.name]),
-                "${0:,.2f}".format(row[DataColumns.USD.name]),
-                ]
+                    hoverData = {
+                        "URL": row[DataColumns.ImageUrl.name],
+                        "FileName": imageFileName,
+                        "ThumbName": thumbFileName,
+                        "Name": row[DataColumns.Name.name],
+                        "TokenId": row[DataColumns.TokenId.name]
+                        }
 
-            hoverData = {
-                "URL": row[DataColumns.ImageUrl.name],
-                "FileName": imageFileName,
-                "ThumbName": thumbFileName,
-                "Name": row[DataColumns.Name.name],
-                "TokenId": row[DataColumns.TokenId.name]
-                }
+                    for t in record:
+                        txt = dpg.add_text(default_value=t, parent=self.table)
+                        hoverData['EventSource'] = txt
+                        dpg.add_hover_handler(parent=txt, callback=self.HoverHandler, user_data=hoverData)
+                        dpg.add_table_next_column(parent=self.table)
 
-            for t in record:
-                txt = dpg.add_text(default_value=t, parent=self.table)
-                hoverData['EventSource'] = txt
-                dpg.add_hover_handler(parent=txt, callback=self.HoverHandler, user_data=hoverData)
-                dpg.add_table_next_column(parent=self.table)
+                    btn = dpg.add_button(
+                        label=row[DataColumns.Name.name],
+                        parent=self.table,
+                        user_data=row[DataColumns.Link.name],
+                        callback=lambda _,__,url=row[DataColumns.Link.name]: webbrowser.open(url)
+                        )
+                    tt = dpg.add_tooltip(parent=btn)
+                    dpg.add_text(f"TokenID: {tokenId}", parent=tt)
+                    dpg.add_text("\n".join(row[DataColumns.Properties.name].values()), parent=tt)
 
-            btn = dpg.add_button(
-                label=row[DataColumns.Name.name],
-                parent=self.table,
-                user_data=row[DataColumns.Link.name],
-                callback=lambda _,__,url=row[DataColumns.Link.name]: webbrowser.open(url)
-                )
-            tt = dpg.add_tooltip(parent=btn)
-            dpg.add_text(f"TokenID: {tokenId}", parent=tt)
-            dpg.add_text("\n".join(row[DataColumns.Properties.name].values()), parent=tt)
+                    hoverData['EventSource'] = btn
+                    dpg.add_hover_handler(parent=btn, callback=self.HoverHandler, user_data=hoverData)
+                    dpg.add_table_next_column(parent=self.table)
 
-            hoverData['EventSource'] = btn
-            dpg.add_hover_handler(parent=btn, callback=self.HoverHandler, user_data=hoverData)
-            dpg.add_table_next_column(parent=self.table)
-
-            dpg.add_text(", ".join(row[DataColumns.Properties.name].values()), parent=self.table)
-            dpg.add_table_next_column(parent=self.table)
-
-        Wallet.TableDataLock.release()
-        Wallet.AssetsTableLock.release()
+                    dpg.add_text(", ".join(row[DataColumns.Properties.name].values()), parent=self.table)
+                    dpg.add_table_next_column(parent=self.table)
 
     def SortTableData(self, column, descending):
-        Wallet.TableDataLock.acquire()
-        Wallet.TableData = sorted(Wallet.TableData, key=lambda r: r[column], reverse=descending)
-        Wallet.TableSortPreference = (column, descending)
-        Wallet.TableDataLock.release()
+        with Wallet.TableDataLock:
+            self.dataUpdated.clear()
+            Wallet.TableSortPreference = (column, descending)
+            Wallet.TableData = sorted(Wallet.TableData, key=lambda r: r[column], reverse=descending)
+            self.dataUpdated.set()
 
     def UpdateTableData(self, walletAddress, contractAddress):
         ethPrice = Ethereum.GetEthInFiat(1.0)
-
-        # prevent re-entrancy    
-        if Wallet.TableDataLock.locked():
-            return
-        else:
-            Wallet.TableDataLock.acquire()
-
         netWorthInEth = 0.0
         netWorthInFiat = 0.0
         i = 0.0
 
-        Wallet.TableData.clear()
+        with Wallet.TableDataLock:
+            self.dataUpdated.clear()
+            Wallet.TableData.clear()
 
-        assets = OpenSea.GetAssets(
-            walletAddress,
-            contractAddress,
-            logInfoCallback=self.logInfoCallback,
-            logErrorCallback=self.logErrorCallback)
-
-        numAssets = float(len(assets))
-
-        for asset in assets:
-            i += 1.0
-            name = asset['name']
-            link = asset['permalink']
-            tokenId = int(asset['token_id'])
-            imageUrl = asset['image_original_url']
-            thumbUrl = asset['image_thumbnail_url']
-            properties = {t['trait_type']:t['value'] for t in asset['traits']}
-
-            supply = OpenSea.GetTotalTokenSupply(
-                baseConfig=self.baseConfig,
-                cards=self.cards,
-                tokenId=tokenId,
+            assets = OpenSea.GetAssets(
+                walletAddress,
+                contractAddress,
                 logInfoCallback=self.logInfoCallback,
                 logErrorCallback=self.logErrorCallback)
 
-            ownedQuantity = Ethereum.GetTokenQuantity(walletAddress, contractAddress, tokenId)
-            price = OpenSea.GetLastSalePrice(asset)
+            numAssets = float(len(assets))
 
-            netWorthInEth += price * ownedQuantity
-            netWorthInFiat += price * ownedQuantity * ethPrice
-            usdPrice = price * ethPrice
+            for asset in assets:
+                i += 1.0
+                name = asset['name']
+                link = asset['permalink']
+                tokenId = int(asset['token_id'])
+                imageUrl = asset['image_original_url']
+                thumbUrl = asset['image_thumbnail_url']
+                properties = {t['trait_type']:t['value'] for t in asset['traits']}
 
-            row = {
-                DataColumns.TokenId.name : tokenId,
-                DataColumns.Quantity.name : ownedQuantity,
-                DataColumns.ETH.name :price,
-                DataColumns.USD.name : usdPrice,
-                DataColumns.Name.name : name,
-                DataColumns.Link.name : link,
-                DataColumns.ImageUrl.name : imageUrl,
-                DataColumns.ThumbnailUrl.name : thumbUrl,
-                DataColumns.Properties.name : properties,
-                DataColumns.TotalSupply.name : supply['Minted'],
-                DataColumns.WithheldSupply.name : supply['Withheld'],
-                DataColumns.UnreleasedPercentage.name : supply['Withheld'] / supply['Minted'] * 100
-            }
+                supply = OpenSea.GetTotalTokenSupply(
+                    baseConfig=self.baseConfig,
+                    cards=self.cards,
+                    tokenId=tokenId,
+                    logInfoCallback=self.logInfoCallback,
+                    logErrorCallback=self.logErrorCallback)
 
-            Wallet.TableData.append(row)
+                ownedQuantity = Ethereum.GetTokenQuantity(walletAddress, contractAddress, tokenId)
+                price = OpenSea.GetLastSalePrice(asset)
 
-            try:
-                percentage = i / numAssets
-                dpg.set_value(Wallet.ProgressBar, percentage)
-                dpg.configure_item(Wallet.ProgressBar, overlay="Loaded {0:,} assets.".format(int(i), int(numAssets)))
-            except Exception as e:
-                self.logErrorCallback(str(e))
+                netWorthInEth += price * ownedQuantity
+                netWorthInFiat += price * ownedQuantity * ethPrice
+                usdPrice = price * ethPrice
 
-        # todo: find a better place to update these
-        dpg.set_value(self.ethPriceText, "${0:,.2f}".format(ethPrice))
-        dpg.set_value(self.totalETHText, "{0:,.4f}".format(netWorthInEth))
-        dpg.set_value(self.totalUSDText, "${0:,.2f}".format(netWorthInFiat))
-        dpg.set_value(self.lastUpdateText, datetime.now().strftime("%c"))
+                row = {
+                    DataColumns.TokenId.name : tokenId,
+                    DataColumns.Quantity.name : ownedQuantity,
+                    DataColumns.ETH.name :price,
+                    DataColumns.USD.name : usdPrice,
+                    DataColumns.Name.name : name,
+                    DataColumns.Link.name : link,
+                    DataColumns.ImageUrl.name : imageUrl,
+                    DataColumns.ThumbnailUrl.name : thumbUrl,
+                    DataColumns.Properties.name : properties,
+                    DataColumns.TotalSupply.name : supply['Minted'],
+                    DataColumns.WithheldSupply.name : supply['Withheld'],
+                    DataColumns.UnreleasedPercentage.name : supply['Withheld'] / supply['Minted'] * 100
+                }
 
-        Wallet.TableDataLock.release()
+                Wallet.TableData.append(row)
+
+                try:
+                    percentage = i / numAssets
+                    dpg.set_value(Wallet.ProgressBar, percentage)
+                    dpg.configure_item(Wallet.ProgressBar, overlay="Loaded {0:,} assets.".format(int(i), int(numAssets)))
+                except Exception as e:
+                    self.logErrorCallback(str(e))
+
+            dpg.set_value(self.ethPriceText, "${0:,.2f}".format(ethPrice))
+            dpg.set_value(self.totalETHText, "{0:,.4f}".format(netWorthInEth))
+            dpg.set_value(self.totalUSDText, "${0:,.2f}".format(netWorthInFiat))
+            dpg.set_value(self.lastUpdateText, datetime.now().strftime("%c"))
+
         column, descending = Wallet.TableSortPreference
+
+        # we don't need to set the self.dataCompleted event because SortTableData does it
         self.SortTableData(column, descending)
 
     

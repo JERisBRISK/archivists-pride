@@ -167,9 +167,9 @@ class Sets(metaclass=Singleton):
                         dpg.add_text(default_value="Full Set Cost (Lowest Listings):", parent=tt, color=(0,255,255))
                         dpg.add_text(default_value=f"  ETH {setPriceEth:0,.4f}", parent=tt)
                         dpg.add_text(default_value=f"  USD ${(setPriceEth * ethInFiat):0,.2f}", parent=tt)
-                        if unavailableTokens:
-                            dpg.add_text(default_value="Unavailable Tokens:", parent=tt, color=(255,0,0))
-                            for t in unavailableTokens:
-                                dpg.add_text(default_value=f"  {self.cards.Get(str(t))['name']}", parent=tt, color=(255,0,0))
+                    if unavailableTokens:
+                        dpg.add_text(default_value="Unavailable Tokens:", parent=tt, color=(255,0,0))
+                        for t in unavailableTokens:
+                            dpg.add_text(default_value=f"  {self.cards.Get(str(t))['name']}", parent=tt, color=(255,0,0))
 
                 dpg.add_table_next_column()

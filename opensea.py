@@ -130,71 +130,73 @@ class OpenSea:
 
     @staticmethod
     def GetListings(walletAddress, contractAddress, logInfoCallback, logErrorCallback, retries=5):
-            if retries < 0:
-                return []
+        if retries < 0:
+            return []
 
-            url = "https://api.opensea.io/wyvern/v1/orders"
-            headers = {"Accept": "application/json"}
-            listings = []
-            tokens = []
-            ethPrice = Ethereum.GetEthInFiat(1.0)
+        logInfoCallback(f"GetListings for {walletAddress}")
 
-            tokens = OpenSea.GetTokens(walletAddress, contractAddress, logInfoCallback, logErrorCallback)
-            # wallet has no tokens, therefore has nothing to offer
-            if not tokens:
-                logInfoCallback(f"Wallet {walletAddress} does not appear to hold any tokens.")
-                return
+        url = "https://api.opensea.io/wyvern/v1/orders"
+        headers = {"Accept": "application/json"}
+        listings = []
+        tokens = []
+        ethPrice = Ethereum.GetEthInFiat(1.0)
 
-            query = {
-                "asset_contract_address":contractAddress,
-                "maker":walletAddress,
-                "taker":OpenSea.NullAddress,
-                "include_bundled":"true",
-                "include_invalid":"false",
-                "side":"1",
-                "sale_kind":"0",
-                "offset":"0",
-                "limit":"50",
-                "order_by":"eth_price",
-                "order_direction":"asc",
-                "token_ids":tokens,
-            }
+        tokens = OpenSea.GetTokens(walletAddress, contractAddress, logInfoCallback, logErrorCallback)
+        # wallet has no tokens, therefore has nothing to offer
+        if not tokens:
+            logInfoCallback(f"Wallet {walletAddress} does not appear to hold any tokens.")
+            return
 
-            orders = OpenSea.GetResponse(url=url, headers=headers, query=query, logInfoCallback=logInfoCallback, logErrorCallback=logErrorCallback)
+        query = {
+            "asset_contract_address":contractAddress,
+            "maker":walletAddress,
+            "taker":OpenSea.NullAddress,
+            "include_bundled":"true",
+            "include_invalid":"false",
+            "side":"1",
+            "sale_kind":"0",
+            "offset":"0",
+            "limit":"50",
+            "order_by":"eth_price",
+            "order_direction":"asc",
+            "token_ids":tokens,
+        }
 
-            if 'orders' in orders:
-                for order in orders['orders']:
-                    tokenId = int(order['metadata']['asset']['id'])
-                    qty = int(order['metadata']['asset']['quantity'])
-                    decimals = int(order['payment_token_contract']['decimals'])
-                    currency = order['payment_token_contract']['symbol']
-                    price = float(order['current_price']) / qty / (10**decimals)
+        orders = OpenSea.GetResponse(url=url, headers=headers, query=query, logInfoCallback=logInfoCallback, logErrorCallback=logErrorCallback)
 
-                    # DAI is usually locked to $1, just like USDC
-                    if "USDC" == currency or "DAI" == currency:
-                        price = price / ethPrice
-                        
-                    listing = {
-                        "TokenId" : tokenId,
-                        "Quantity" : qty,
-                        "ETH" : price,
-                        "USD" : price * ethPrice,
-                        "TotalETH" : price * qty,
-                        "TotalUSD" : price * qty * ethPrice,
-                        "Name" : order['asset']['name'],
-                        "Link" : order['asset']['permalink'],
-                    }
+        if 'orders' in orders:
+            for order in orders['orders']:
+                tokenId = int(order['metadata']['asset']['id'])
+                qty = int(order['metadata']['asset']['quantity'])
+                decimals = int(order['payment_token_contract']['decimals'])
+                currency = order['payment_token_contract']['symbol']
+                price = float(order['current_price']) / qty / (10**decimals)
 
-                    listings.append(listing)
-            else:
-                listings = OpenSea.GetMyListings(
-                    contractAddress=contractAddress,
-                    logInfoCallback=logInfoCallback,
-                    logErrorCallback=logErrorCallback,
-                    walletAddress=walletAddress,
-                    retries=retries - 1)
+                # DAI is usually locked to $1, just like USDC
+                if "USDC" == currency or "DAI" == currency:
+                    price = price / ethPrice
 
-            return listings
+                listing = {
+                    "TokenId" : tokenId,
+                    "Quantity" : qty,
+                    "ETH" : price,
+                    "USD" : price * ethPrice,
+                    "TotalETH" : price * qty,
+                    "TotalUSD" : price * qty * ethPrice,
+                    "Name" : order['asset']['name'],
+                    "Link" : order['asset']['permalink'],
+                }
+
+                listings.append(listing)
+        else:
+            listings = OpenSea.GetListings(
+                contractAddress=contractAddress,
+                logInfoCallback=logInfoCallback,
+                logErrorCallback=logErrorCallback,
+                walletAddress=walletAddress,
+                retries=retries - 1)
+
+        return listings
 
     @staticmethod
     def GetPrices(order):

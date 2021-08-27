@@ -15,14 +15,22 @@
     "traits": {
       "Parallel": "Earthen"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10106"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10106",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 176
+    }
   },
   "10109": {
     "name": "Marcolian Bannerman [SE]",
     "traits": {
       "Parallel": "Marcolian"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10109"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10109",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 242
+    }
   },
   "10111": {
     "name": "Soleia, Disciple of Gaffar",
@@ -40,7 +48,11 @@
     "traits": {
       "Parallel": "Earthen"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10112"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10112",
+    "supply": {
+      "Minted": 250,
+      "Withheld": 39
+    }
   },
   "10114": {
     "name": "Reclamator",
@@ -58,7 +70,11 @@
     "traits": {
       "Parallel": "Augencore"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10115"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10115",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 171
+    }
   },
   "10119": {
     "name": "Lancer Tank",
@@ -83,7 +99,11 @@
     "traits": {
       "Parallel": "Kathari"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10126"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10126",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 196
+    }
   },
   "10133": {
     "name": "Solar Grenade",
@@ -101,7 +121,11 @@
     "traits": {
       "Parallel": "Marcolian"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10134"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10134",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 185
+    }
   },
   "10137": {
     "name": "Strength of Mars [SE]",
@@ -119,7 +143,11 @@
     "traits": {
       "Parallel": "Marcolian"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10140"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10140",
+    "supply": {
+      "Minted": 1500,
+      "Withheld": 216
+    }
   },
   "10142": {
     "name": "Demolecularize [SE]",
@@ -159,14 +187,22 @@
     "traits": {
       "Parallel": "Shroud"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10151"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10151",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 187
+    }
   },
   "10152": {
     "name": "Enthalpy's Grasp [SE]",
     "traits": {
       "Parallel": "Shroud"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10152"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10152",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 144
+    }
   },
   "10153": {
     "name": "Amperage",
@@ -184,7 +220,11 @@
     "traits": {
       "Parallel": "Augencore"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10154"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10154",
+    "supply": {
+      "Minted": 500,
+      "Withheld": 164
+    }
   },
   "10156": {
     "name": "Entropy's Reach [SE]",
@@ -202,7 +242,11 @@
     "traits": {
       "Parallel": "Kathari"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10159"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10159",
+    "supply": {
+      "Minted": 1000,
+      "Withheld": 152
+    }
   },
   "10161": {
     "name": "Foundry Technician [SE]",
@@ -456,14 +500,22 @@
     "traits": {
       "Parallel": "Kathari"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10227"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10227",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 8
+    }
   },
   "10228": {
     "name": "Shroud Logo Collectible Card Back",
     "traits": {
       "Parallel": "Shroud"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10228"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10228",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 9
+    }
   },
   "10229": {
     "name": "Marcolian Logo Collectible Card Back",
@@ -1459,7 +1511,11 @@
     "traits": {
       "Parallel": "Shroud"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10225"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10225",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 6
+    }
   },
   "10213": {
     "name": "Reliant Gamma",

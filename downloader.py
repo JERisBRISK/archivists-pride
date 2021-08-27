@@ -40,14 +40,12 @@ class Downloader(metaclass=Singleton):
             for i, lock in enumerate(self.lockPool):
                 if not lock.locked():
                     lock.acquire()
-                    self.logInfoCallback(f"{get_ident()}: acquired lock {i}")
                     return lock
             
             # a lock was not available, wait on one at random
             i = randint(0,2)
             lock = self.lockPool[i]
             lock.acquire()
-            self.logInfoCallback(f"{get_ident()}: acquired lock {i}")
             return lock
 
     # inspired by https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests
@@ -55,36 +53,40 @@ class Downloader(metaclass=Singleton):
         try:
             if retries < 0:
                 self.logErrorCallback(f"DownloadImage {get_ident()}: Retry count for {url} exceeded.")
+                self.cache.remove(destination)
+                if lock and lock.locked():
+                    self.logInfoCallback(f"DownloadImage {get_ident()}: Releasing lock")
+                    lock.release()
                 return
 
             if not lock:
                 lock = self.GetLock()
             
-            self.logInfoCallback(f"DownloadImage {get_ident()}: Downloading {url} attempt {retries}")
             try:
+                self.logInfoCallback(f"DownloadImage {get_ident()}: Requesting {url} ...")
                 response = get(url, stream=True)
                 if response and response.status_code == 200:
+                    self.logInfoCallback(f"DownloadImage {get_ident()}: Downloading {url}")
                     partFile = destination + ".part"
                     with open(self.cacheManager.GetCachePath(Cache.Images, partFile), 'wb') as out_file:
                         response.raw.decode_content = True
                         copyfileobj(response.raw, out_file)
                     del response
 
+                    self.logInfoCallback(f"DownloadImage {get_ident()}: Renaming {partFile} to {destination}")
                     rename(
                         self.cacheManager.GetCachePath(Cache.Images, partFile),
                         self.cacheManager.GetCachePath(Cache.Images, destination))
 
-                    self.logInfoCallback(f"DownloadImage {get_ident()}: {destination} downloaded.")
-                    return
                 elif response and response.status_code == 429:
                     self.logErrorCallback(f"DownloadImage {get_ident()}: response: {response}")
-                    OpenSea.RandomSleep()
+                    OpenSea.RandomSleep(0.1, 3)
                     self.DownloadImage(url, destination, lock, retries=retries - 1)
             except Exception as e:
                 self.logErrorCallback(str(e))
         finally:
-            self.logInfoCallback(f"DownloadImage {get_ident()}: Releasing lock")
             if lock and lock.locked():
+                self.logInfoCallback(f"DownloadImage {get_ident()}: Releasing lock")
                 lock.release()
 
     def DownloadQueueWorker(self):
