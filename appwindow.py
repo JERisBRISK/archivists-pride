@@ -6,7 +6,6 @@ class AppWindow:
     CardWindow = dpg.generate_uuid()
     CardWindowImage = dpg.generate_uuid()
     CardWindowImageTexture = dpg.generate_uuid()
-    ProgressBar = dpg.generate_uuid()
     ViewMenu = dpg.generate_uuid()
 
     def __init__(self, label:str, height:int, width:int, baseConfig:BaseConfig):
@@ -33,7 +32,6 @@ class AppWindow:
                     dpg.add_same_line(spacing=20)
                     dpg.add_button(label="Sponsor me on GitHub!", callback=lambda: webbrowser.open("https://github.com/sponsors/JERisBRISK"))
                     dpg.add_text()
-                dpg.add_progress_bar(id=AppWindow.ProgressBar, label="ProgressBar", overlay="status", default_value = 0.0, width=200)
 
             with dpg.window(label="Card Viewer", width=600, height=900, id=AppWindow.CardWindow, show=False):
                 def CardWindowResize(sender, app_data, user_data):

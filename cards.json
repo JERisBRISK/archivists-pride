@@ -1165,21 +1165,33 @@
     "traits": {
       "Parallel": "Marcolian"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/39"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/39",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 85
+    }
   },
   "40": {
     "name": "Shroud Parallel Collectible Card Back",
     "traits": {
       "Parallel": "Shroud"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/40"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/40",
+    "supply": {
+      "Minted": 100,
+      "Withheld": 84
+    }
   },
   "64": {
     "name": "Archivist's Pride [SE]",
     "traits": {
       "Parallel": "Kathari"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/64"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/64",
+    "supply": {
+      "Minted": 63,
+      "Withheld": 1
+    }
   },
   "65": {
     "name": "Revitalizing Growth [SE]",
@@ -1823,7 +1835,11 @@
     "traits": {
       "Parallel": "Marcolian"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10108"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10108",
+    "supply": {
+      "Minted": 50000,
+      "Withheld": 49984
+    }
   },
   "10107": {
     "name": "Parallel Masterpiece // Alpha // Marcolian Bannerman",
@@ -1837,7 +1853,11 @@
     "traits": {
       "Parallel": "Earthen"
     },
-    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10105"
+    "link": "https://opensea.io/assets/0x76be3b62873462d2142405439777e971754e8e77/10105",
+    "supply": {
+      "Minted": 10000,
+      "Withheld": 9984
+    }
   },
   "10104": {
     "name": "Parallel Masterpiece // Alpha // Malachite Shield",
