@@ -57,25 +57,25 @@ class Downloader(metaclass=Singleton):
 
         try:
             self.logInfoCallback(f"DownloadImage {get_ident()}: Requesting {url} ...")
-            # response = get(url, stream=True)
-            # if response and response.status_code == 200:
-            #     self.logInfoCallback(f"DownloadImage {get_ident()}: Downloading {url}")
-            #     partFile = destination + ".part"
-            #     with open(self.cacheManager.GetCachePath(Cache.Images, partFile), 'wb') as out_file:
-            #         response.raw.decode_content = True
-            #         copyfileobj(response.raw, out_file)
-            #     del response
+            response = get(url, stream=True)
+            if response and response.status_code == 200:
+                self.logInfoCallback(f"DownloadImage {get_ident()}: Downloading {url}")
+                partFile = destination + ".part"
+                with open(self.cacheManager.GetCachePath(Cache.Images, partFile), 'wb') as out_file:
+                    response.raw.decode_content = True
+                    copyfileobj(response.raw, out_file)
+                del response
 
-            #     self.logInfoCallback(f"DownloadImage {get_ident()}: Renaming {partFile} to {destination}")
-            #     rename(
-            #         self.cacheManager.GetCachePath(Cache.Images, partFile),
-            #         self.cacheManager.GetCachePath(Cache.Images, destination))
+                self.logInfoCallback(f"DownloadImage {get_ident()}: Renaming {partFile} to {destination}")
+                rename(
+                    self.cacheManager.GetCachePath(Cache.Images, partFile),
+                    self.cacheManager.GetCachePath(Cache.Images, destination))
                 
-            self.cache.remove(destination)
-            # elif response and response.status_code == 429:
-            #     self.logErrorCallback(f"DownloadImage {get_ident()}: response: {response}")
-            #     OpenSea.RandomSleep(0.1, 3)
-            #     self.DownloadImage(url, destination, lock, retries=retries - 1)
+                self.cache.remove(destination)
+            elif response and response.status_code == 429:
+                self.logErrorCallback(f"DownloadImage {get_ident()}: response: {response}")
+                OpenSea.RandomSleep(0.1, 3)
+                self.DownloadImage(url, destination, lock, retries=retries - 1)
         except Exception as e:
             self.logErrorCallback(str(e))
 
