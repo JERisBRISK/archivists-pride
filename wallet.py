@@ -1,3 +1,4 @@
+from time import sleep
 from alert import alert
 from appwindow import AppWindow
 from cache import Cache
@@ -15,7 +16,6 @@ from singleton import Singleton
 from singleton import Singleton
 from sortdirection import SortDirection
 from threading import Lock, Thread, Event
-from time import sleep
 import dearpygui.dearpygui as dpg
 import webbrowser
 
@@ -52,6 +52,7 @@ class Wallet(metaclass=Singleton):
         # data
         self.lastUpdateTime = 0
         self.dataUpdated = Event()
+        self.imageLock = Lock()
 
         # UI elements
         self.addressText = dpg.generate_uuid()
@@ -162,49 +163,68 @@ class Wallet(metaclass=Singleton):
 
     def HoverHandler(self, sender, app_data, user_data):
         fileName = user_data['FileName']
+        print(f"0 HoverHandler for {fileName}")
 
-        # the current image displayed is the same as the image we're trying to display
-        if dpg.does_item_exist(self.mainWindow.CardWindowImage):
-            if dpg.get_item_user_data(self.mainWindow.CardWindowImage) == fileName:
+        if self.imageLock.locked():
+            print("  0.1 Image window is locked, so return.")
+            return
+        
+        with self.imageLock:
+            # the CardWindowImage control is registered with dpg
+            if dpg.does_item_exist(self.mainWindow.CardWindowImage):
+                # the current CardWindowImage is the same as the image we're trying to display
+                if dpg.get_item_user_data(self.mainWindow.CardWindowImage) == fileName:
+                    return
+
+            # the texture is already loaded, so just switch to it
+            if self.cache.IsCached(Cache.Textures, fileName):
+                dpg.set_item_user_data(self.mainWindow.CardWindowImage, fileName)
+                w, h, data = self.cache.textures[fileName]
+                dpg.set_value(self.mainWindow.CardWindowImageTexture, data)
                 return
 
-        # the texture is already loaded, so just switch to it
-        if self.cache.IsCached(Cache.Textures, fileName):
-            dpg.set_item_user_data(self.mainWindow.CardWindowImage, fileName)
-            w, h, data = self.cache.textures[fileName]
-            dpg.set_value(self.mainWindow.CardWindowImageTexture, data)
-            return
+            # the texture isn't in the file cache, download it
+            if not self.cache.IsCached(Cache.Images, fileName):
+                self.downloader.Enqueue(url=user_data['URL'], fileName=fileName)
+                return
 
-        # the texture isn't in the file cache
-        if not self.cache.IsCached(Cache.Images, fileName):
-            self.downloader.Enqueue(url=user_data['URL'], fileName=fileName)
+            # the texture is in the file cache, so load it
+            if self.cache.IsCached(Cache.Images, fileName):
+                # load the texture
+                fullName = self.cache.GetCachePath(Cache.Images, fileName)
+                self.logInfoCallback(f"Loading {fileName}")
+                loadedImage = dpg.load_image(fullName)
 
-        # the texture is in the file cache, so load it
-        if self.cache.IsCached(Cache.Images, fileName):
-            # load the texture
-            fullName = self.cache.GetCachePath(Cache.Images, fileName)
+                if loadedImage:
+                    self.logInfoCallback(f"Loaded {fileName}. Installing texture...")
+                    w, h, _, data = loadedImage
+                    # cache it
+                    self.cache.textures[fileName] = (w, h, data)
+                    # set it
+                    with dpg.texture_registry():
+                        if dpg.does_item_exist(self.mainWindow.CardWindowImageTexture):
+                            dpg.set_value(self.mainWindow.CardWindowImageTexture, data)
+                        else:
+                            dpg.add_dynamic_texture(
+                                id=self.mainWindow.CardWindowImageTexture,
+                                width=w,
+                                height=h,
+                                default_value=data)
 
-            self.logInfoCallback(f"Loading {fileName}")
-            loadedImage = dpg.load_image(fullName)
-
-            if loadedImage:
-                self.logInfoCallback(f"Loaded {fileName}. Installing texture...")
-
-                w, h, _, data = loadedImage
-                # cache it
-                self.cache.textures[fileName] = (w, h, data)
-                # set it
-                with dpg.texture_registry():
-                    if dpg.does_item_exist(self.mainWindow.CardWindowImageTexture):
-                        dpg.set_value(self.mainWindow.CardWindowImageTexture, data)
-                        dpg.set_value(self.mainWindow.CardWindowImage, fileName)
-                    else:
-                        dpg.add_dynamic_texture(id=self.mainWindow.CardWindowImageTexture, width=w, height=h, default_value=data)
-                        dpg.add_image(texture_id=self.mainWindow.CardWindowImageTexture, id=self.mainWindow.CardWindowImage, parent=self.mainWindow.CardWindow, user_data=fileName, width=w / 2 + 20, height=h / 2 + 50)
-            else:
-                self.logErrorCallback(f"Couldn't load {fileName}.")
-                if stat(fileName).st_size == 0:
-                    self.logErrorCallback(f"{fileName} is 0 bytes long. Consider deleting it.")
+                        if dpg.does_item_exist(self.mainWindow.CardWindowImage):
+                            dpg.set_value(self.mainWindow.CardWindowImage, fileName)
+                        else:
+                            dpg.add_image(
+                                texture_id=self.mainWindow.CardWindowImageTexture,
+                                id=self.mainWindow.CardWindowImage,
+                                parent=self.mainWindow.CardWindow,
+                                user_data=fileName,
+                                width=w / 2 + 20,
+                                height=h / 2 + 50)
+                else:
+                    self.logErrorCallback(f"Couldn't load {fileName}.")
+                    if stat(fileName).st_size == 0:
+                        self.logErrorCallback(f"{fileName} is 0 bytes long. Consider deleting it.")
 
     def Show(self):
         dpg.configure_item(self.window, show=True)

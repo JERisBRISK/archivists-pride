@@ -31,7 +31,7 @@ class Downloader(metaclass=Singleton):
     def Enqueue(self, url:str, fileName:str):
         self.queue.put(item={
                 'file' : fileName,
-                'function' : lambda u=url,f=fileName: self.DownloadImage(u, f)
+                'url' : url
             })
 
     def GetLock(self) -> Lock:
@@ -50,44 +50,34 @@ class Downloader(metaclass=Singleton):
 
     # inspired by https://stackoverflow.com/questions/13137817/how-to-download-image-using-requests
     def DownloadImage(self, url:str, destination:str, lock:Lock=None, retries = 5):
+        if retries < 0:
+            self.logErrorCallback(f"DownloadImage {get_ident()}: Retry count for {url} exceeded.")
+            self.cache.remove(destination)
+            return
+
         try:
-            if retries < 0:
-                self.logErrorCallback(f"DownloadImage {get_ident()}: Retry count for {url} exceeded.")
+            self.logInfoCallback(f"DownloadImage {get_ident()}: Requesting {url} ...")
+            response = get(url, stream=True)
+            if response and response.status_code == 200:
+                self.logInfoCallback(f"DownloadImage {get_ident()}: Downloading {url}")
+                partFile = destination + ".part"
+                with open(self.cacheManager.GetCachePath(Cache.Images, partFile), 'wb') as out_file:
+                    response.raw.decode_content = True
+                    copyfileobj(response.raw, out_file)
+                del response
+
+                self.logInfoCallback(f"DownloadImage {get_ident()}: Renaming {partFile} to {destination}")
+                rename(
+                    self.cacheManager.GetCachePath(Cache.Images, partFile),
+                    self.cacheManager.GetCachePath(Cache.Images, destination))
+                
                 self.cache.remove(destination)
-                if lock and lock.locked():
-                    self.logInfoCallback(f"DownloadImage {get_ident()}: Releasing lock")
-                    lock.release()
-                return
-
-            if not lock:
-                lock = self.GetLock()
-            
-            try:
-                self.logInfoCallback(f"DownloadImage {get_ident()}: Requesting {url} ...")
-                response = get(url, stream=True)
-                if response and response.status_code == 200:
-                    self.logInfoCallback(f"DownloadImage {get_ident()}: Downloading {url}")
-                    partFile = destination + ".part"
-                    with open(self.cacheManager.GetCachePath(Cache.Images, partFile), 'wb') as out_file:
-                        response.raw.decode_content = True
-                        copyfileobj(response.raw, out_file)
-                    del response
-
-                    self.logInfoCallback(f"DownloadImage {get_ident()}: Renaming {partFile} to {destination}")
-                    rename(
-                        self.cacheManager.GetCachePath(Cache.Images, partFile),
-                        self.cacheManager.GetCachePath(Cache.Images, destination))
-
-                elif response and response.status_code == 429:
-                    self.logErrorCallback(f"DownloadImage {get_ident()}: response: {response}")
-                    OpenSea.RandomSleep(0.1, 3)
-                    self.DownloadImage(url, destination, lock, retries=retries - 1)
-            except Exception as e:
-                self.logErrorCallback(str(e))
-        finally:
-            if lock and lock.locked():
-                self.logInfoCallback(f"DownloadImage {get_ident()}: Releasing lock")
-                lock.release()
+            elif response and response.status_code == 429:
+                self.logErrorCallback(f"DownloadImage {get_ident()}: response: {response}")
+                OpenSea.RandomSleep(0.1, 3)
+                self.DownloadImage(url, destination, lock, retries=retries - 1)
+        except Exception as e:
+            self.logErrorCallback(str(e))
 
     def DownloadQueueWorker(self):
         self.logInfoCallback("DownloadQueueWorker starting up.")
@@ -98,7 +88,8 @@ class Downloader(metaclass=Singleton):
                 self.queue.task_done()
                 continue
             else:
-                self.cache.add(item['file'])
-                item['function']()
-                self.queue.task_done()
+                with self.GetLock():
+                    self.cache.add(item['file'])
+                    Thread(target=self.DownloadImage, args=(item['url'], item['file']), daemon=True)
+                    self.queue.task_done()
             sleep(0.1)
